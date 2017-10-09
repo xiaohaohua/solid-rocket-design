@@ -12,5 +12,5 @@ will be saved as graph1
 s*pi/n<angle/2.The forth is loading cofficient is limited to 0.75 to 0.85.The fifth is the left grain is limited to less than 0.05.The fininal one is the length of the grain.It is limited to 1.3 to 1.8.
 * The finial part is to plot the graph of burning area change by e.
 ## plot trajectory curves
-*I am writing the code，please wait for me
+* I am writing the code，please wait for me
 
