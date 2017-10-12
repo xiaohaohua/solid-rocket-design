@@ -15,5 +15,8 @@ The forth is loading cofficient is limited to 0.75 to 0.85.The fifth is the left
 length of the grain.It is limited to 1.3 to 1.8.
 * The finial part is to plot the graph of burning area change by e.
 ## plot trajectory curves
-* I am writing the code，please wait for me
+* first,you should open the original2.data to change the parametres,input D,Iz,F,pc,k,M,Tfc,density,rspeedfo(the burning speed at 6.9Mpa),n(pressure exponent),r1,tdata,L,erod.you can find their physical meaning in original2.data.
+* At the first time you can set erod=1,which means you consider about the erod procession,the data is saved as pe.data.
+* Then you can set erod=0,which means you do not consider about the erod procession,the data is saved as pnoe.data.
+* Finally,start plot trajectory curves.py,you can get the curves.
 
