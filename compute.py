@@ -241,9 +241,6 @@ while(p>=p0):
         dt=0.01
     t=t+dt
     answer1=update(p,e,lamda_L,ratio,number,Vg,dt)
-    Vg=answer1[6]
-    mb=answer1[7]
-    md=answer1[8]
     p=p+R/M*Tf/Vg*(mb-md)*dt
     e=answer1[0]
     Ab=answer1[1]
@@ -251,6 +248,9 @@ while(p>=p0):
     ratio=answer1[3]
     lamda_L=answer1[4]
     rspeed=answer1[5]
+    Vg=answer1[6]
+    mb=answer1[7]
+    md=answer1[8]
     print('now the time is {0}'.format(t))
     with open(sting,'a') as f:
         f.write(str(p)+'     '+str(t)+'\n')
