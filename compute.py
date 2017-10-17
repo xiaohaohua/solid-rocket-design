@@ -114,12 +114,13 @@ def get_Vg(Vg,mb,dt):
 
 def get_rspeed(lamda_L,p,ratio,m):
     dx=L/m
+    speed=np.zeros(m)
     for j in range(m):
         location=j*dx
         lamda=get_lamda(location,lamda_L)
         rlamda=get_rlamda(lamda)
-        rspeed[j]=ratio*a*math.pow(p/rlamda,n)
-    return rspeed
+        speed[j]=ratio*a*math.pow(p*rlamda,n)
+    return speed
 
 def get_mb(e,rspeed,m):
     mb=0
