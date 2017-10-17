@@ -142,7 +142,7 @@ def get_md(p,lamda_L):
  
 
 def compute_k(Vg,mb,md):
-    return R/M*Tf/Vg*(mb-md)
+    return R/M*Tf/Vg*(mb-md)*dt
     
 def update(p,e,lamda_L,ratio,m,Vg,dt):#dt后数据?此时的压力与几何是否密切相关？
     rspeed=get_rspeed(lamda_L,p,ratio,m)
